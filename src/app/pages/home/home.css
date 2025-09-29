@@ -1,0 +1,17 @@
+.btn-action {
+    background-color: #FFE9D5;
+    color: pink;
+}
+
+/*Titulo llamado por ID*/
+#title {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*1rem = 16px*/
+.card {
+    margin: 1rem;
+}
