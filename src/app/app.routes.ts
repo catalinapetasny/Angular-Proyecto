@@ -5,8 +5,22 @@ import { About } from './pages/about/about';
 import { Products } from './pages/products/products';
 
 export const routes: Routes = [
-    {path: 'home', component: Home},
-    {path: 'contacts', component: Contacts},
-    {path: 'about', component: About},
-    {path: 'products', component: Products}
+    {
+        /* Definimos ruta general o raíz en específico
+        que nos lleve a la ruta Home*/
+        path : "**", component : Home
+
+    },
+    {
+        path: 'home', component: Home
+    },
+    {
+        path: 'contacts', component: Contacts
+    },
+    {
+        path: 'about', component: About
+    },
+    {
+        path: 'products', component: Products
+    }
 ];

@@ -3,6 +3,10 @@
     color: pink;
 }
 
+.contenedorTarjetas {
+    margin-left: 10rem;
+}
+
 /*Titulo llamado por ID*/
 #title {
     color: white;

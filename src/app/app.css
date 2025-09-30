@@ -3,6 +3,6 @@ p {
     font-size: 30;
 }
 
-#navegador {
-    background-color: lightpink;
+.navegador {
+    background-color: lightpink !important;
 }
