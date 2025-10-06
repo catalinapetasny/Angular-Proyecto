@@ -3,6 +3,10 @@
     color: pink;
 }
 
+.btn-action:hover {
+    background-color: deeppink;
+}
+
 .contenedorTarjetas {
     margin-left: 10rem;
 }
