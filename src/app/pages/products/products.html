@@ -1,26 +1,32 @@
+<h1>Sección de Productos</h1>
+<!--
+    lg (larger): Tamaño de pantalla más grande -> PC
+
+    md (media): Tamaño de pantalla medio -> Tablet
+    
+    sm (small): Tamaño de pantalla chico -> Celular
+-->
 <div class="container">
     <div class="row">
+        <!--*ngFor - Es una directiva que permite iterar colecciones/arreglos.
+        funcionalidad similar al "for", "forEach"
+        -->
 
-        <div class="col-6">
+        <!--
+        let i -> definición de la variable que representa 1 elemento 
+        de la colección "InfoTarjeta" (permite iterar)
+        -->
+        <div *ngFor="let i of infoTarjeta" class="col-3">
             <div class="card">
-                <img src="../../../assets/s7ecy7ub3sz71.webp" class="card-img-top" alt="...">
+                <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
                 <div class="card-body">
-                    <h5 class="card-title">Buncat</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <div class="card">
-                <img src="../../../assets/meowl.jfif" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Meowl</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <!--
+                    Interpolación -> Permite accedere a una propiedad 
+                    especifica del modelo
+                    -->
+                    <h5 class="card-title">{{ i.titulo }}</h5>
+                    <p class="card-text">{{ i.descripcion }} - {{ i.anualPublicacion }}</p>
+                    <a href="#" class="btn btn-primary">Ver Más</a>
                 </div>
             </div>
         </div>
