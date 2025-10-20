@@ -25,7 +25,9 @@
                     especifica del modelo
                     -->
                     <h5 class="card-title">{{ i.titulo }}</h5>
+                    
                     <p class="card-text">{{ i.descripcion }} - {{ i.anualPublicacion }}</p>
+
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verMasInfo"
                         (click)="verMasInfo(i)">
                         Ver mas
@@ -37,7 +39,7 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -60,3 +62,5 @@
         </div>
     </div>
 </div>
+
+<!--data-bs-backdrop="static" data-bs-keyboard="false"-->

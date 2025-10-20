@@ -53,6 +53,7 @@ export class Products {
   }
 
   tarjetaSeleccionada: any = null;
+  
   verMasInfo(tarjeta : any){
     this.tarjetaSeleccionada = tarjeta;
   }
