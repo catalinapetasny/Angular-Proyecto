@@ -16,18 +16,46 @@
         let i -> definición de la variable que representa 1 elemento 
         de la colección "InfoTarjeta" (permite iterar)
         -->
-        <div *ngFor="let i of infoTarjeta" class="col-3">
+        <div *ngFor="let i of infoTarjeta" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
             <div class="card">
                 <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
                 <div class="card-body">
                     <!--
-                    Interpolación -> Permite accedere a una propiedad 
+                    Interpolación -> Permite acceder a una propiedad 
                     especifica del modelo
                     -->
                     <h5 class="card-title">{{ i.titulo }}</h5>
                     <p class="card-text">{{ i.descripcion }} - {{ i.anualPublicacion }}</p>
-                    <a href="#" class="btn btn-primary">Ver Más</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verMasInfo"
+                        (click)="verMasInfo(i)">
+                        Ver mas
+                    </button>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-imagen">
+                    <img src="{{tarjetaSeleccionada?.img}}" alt="{{tarjetaSeleccionada?.alt}}">
+                </div>
+
+                <div class="modal-descripcion">
+                    {{tarjetaSeleccionada?.descripcion}}
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
