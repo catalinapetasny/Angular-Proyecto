@@ -1,5 +1,28 @@
 <h1 id="title">Librería del Horror</h1>
 
+<div class="barraSuperior">
+    <h2>
+        Autores destacados
+    </h2>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of infoAutor" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="card">
+                <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
+                <div class="card-body">
+                    <h4 class="card-title"> {{ i.nombre }} </h4>
+
+                    <h6>Libros Escritos:</h6>
+                    <p class="card-text"> {{i.libros}} </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="contenedorTarjetas row align-items-center">
 
     <div class="card" style="width: 18rem;">
@@ -12,7 +35,8 @@
     </div>
 
     <div class="card" style="width: 18rem;">
-        <img src="../../../assets/cementerioDeAnimales.jfif" class="card-img-top" alt="Cementerio de Animales de Stephen King">
+        <img src="../../../assets/cementerioDeAnimales.jfif" class="card-img-top"
+            alt="Cementerio de Animales de Stephen King">
         <div class="card-body">
             <h5 class="card-title">Cementerio de animales</h5>
             <p class="card-text">Stephen King
@@ -41,7 +65,8 @@
     </div>
 
     <div class="card" style="width: 18rem;">
-        <img src="../../../assets/frankeinstein.jfif" class="card-img-top" alt="Frankenstein o el moderno Prometeo de Mary Shelley ">
+        <img src="../../../assets/frankeinstein.jfif" class="card-img-top"
+            alt="Frankenstein o el moderno Prometeo de Mary Shelley ">
         <div class="card-body">
             <h5 class="card-title">Frankenstein o el moderno Prometeo</h5>
             <p class="card-text">Mary Shelley</p>
@@ -50,7 +75,8 @@
     </div>
 
     <div class="card" style="width: 18rem;">
-        <img src="../../../assets/TheHauntingofHillHouse.jfif" class="card-img-top" alt="La maldición de Hill House de Shirley Jackson">
+        <img src="../../../assets/TheHauntingofHillHouse.jfif" class="card-img-top"
+            alt="La maldición de Hill House de Shirley Jackson">
         <div class="card-body">
             <h5 class="card-title">La maldición de Hill House</h5>
             <p class="card-text">Shirley Jackson</p>
@@ -58,4 +84,3 @@
         </div>
     </div>
 </div>
-
