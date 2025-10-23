@@ -8,7 +8,9 @@
 }
 
 .contenedorTarjetas {
-    margin-left: 10rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
 }
 
 /*Titulo llamado por ID*/
@@ -22,6 +24,7 @@
 /*1rem = 16px*/
 .card {
     margin: 1rem;
+    border-radius: 5px;
 }
 
 .barraSuperior {
@@ -30,4 +33,5 @@
     align-items: center;
     background-color: white;
     color: black;
+    margin: 1rem;
 }
