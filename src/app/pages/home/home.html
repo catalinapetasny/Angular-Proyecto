@@ -10,7 +10,7 @@
 
 <div class="container">
     <div class="row">
-        <div *ngFor="let i of infoAutor" class="col-lg-4 col-md-6 col-sm-10">
+        <div *ngFor="let i of infoAutor" class="col-lg-4 col-md-6 col-sm-10 card-top">
             <div class="card">
                 <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
                 <div class="card-body">
@@ -18,7 +18,7 @@
 
                     <h6>Libros Escritos:</h6>
                     <p class="card-text"> {{i.libros}} </p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verInfo"
+                    <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verInfo"
                         (click)="verInfo(i)">
                         Ver mas
                     </button>
@@ -34,7 +34,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Autor</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -48,85 +48,60 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-action" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
-</div>
+</div> <br>
 
-<div class="contenedorTarjetas row align-items-center">
+<div class="contenedorTarjetas row align-items-center card-top">
+    <div class="tituloh3">
+        <h3>
+            Los más buscados
+        </h3>
+    </div> <br> <br>
 
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/it.jfif" class="card-img-top" alt="It de Stephen King">
-        <div class="card-body">
-            <h5 class="card-title">It</h5>
-            <p class="card-text">Stephen King</p>
-            <a href="#" class="btn btn-action">Agregar al carrito</a>
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let i of infoTarjeta2" class="truncate col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+                <div class="card">
+                    <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ i.tituloLibro }}</h5>
+                        <p class="card-text">{{ i.autor }}</p>
+                        <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verMasInfo"
+                            (click)="verInfo(i)">
+                            Agregar al Carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/cementerioDeAnimales.jfif" class="card-img-top"
-            alt="Cementerio de Animales de Stephen King">
-        <div class="card-body">
-            <h5 class="card-title">Cementerio de animales</h5>
-            <p class="card-text">Stephen King</p>
-            <a href="#" class="btn btn-action">Agregar al carrito</a>
+    <!-- Modal -->
+    <div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Libro Seleccionado</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-imagen">
+                        <img src="{{seleccionarTarjeta?.img}}" alt="{{seleccionarTarjeta?.alt}}">
+                    </div>
+
+                    <div class="modal-descripcion">
+                        {{seleccionarTarjeta?.autor}}
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- ../../../assets/pexels-photo-669015.jpeg -->
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/elResplandor.jfif" class="card-img-top" alt="El Resplandor de Stephen King">
-        <div class="card-body">
-            <h5 class="card-title">El Resplandor</h5>
-            <p class="card-text">Stephen King</p>
-            <a href="#" class="btn btn-action">Agregar al carrito</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/dante.jfif" class="card-img-top" alt="The Inferno of Dante Alighieri">
-        <div class="card-body">
-            <h5 class="card-title">The Inferno of Dante A.</h5>
-            <p class="card-text">Dante Alighieri</p>
-            <a href="#" class="btn btn-action">Agregar al carrito</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/frankeinstein.jfif" class="card-img-top" alt="Frankenstein o el moderno Prometeo de Mary Shelley ">
-        <div class="card-body">
-            <h5 class="card-title">Frankenstein o el moderno Prometeo</h5>
-            <p class="card-text">Mary Shelley</p>
-            <a href="#" class="btn btn-action">Agregar al carrito</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/TheHauntingofHillHouse.jfif" class="card-img-top" alt="La maldición de Hill House de Shirley Jackson">
-        <div class="card-body">
-            <h5 class="card-title">La maldición de Hill House</h5>
-            <p class="card-text">Shirley Jackson</p>
-            <a href="#" class="btn btn-action">Agregar al carrito</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/elExorcista.png" class="card-img-top" alt="El Exorcista de William Peter Blatty">
-        <div class="card-body">
-            <h5 class="card-title">El Exorcista</h5>
-            <p class="card-text">William Peter Blatty</p>
-            <a href="#" class="btn btn-action">Agregar al carrito</a>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/carrie.jpg" class="card-img-top" alt="Carrie de Stephen King">
-        <div class="card-body">
-            <h5 class="card-title">Carrie</h5>
-            <p class="card-text">Stephen King</p>
-            <a href="#" class="btn btn-action">Agregar al carrito</a>
-        </div>
-    </div>
 </div>

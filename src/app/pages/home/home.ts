@@ -14,7 +14,9 @@ export class Home {
   public infoTarjeta2: Destacados[];
 
   constructor() {
+
     /* Info Autores */
+    
     this.infoAutor = [
       {
         id: "1G",
