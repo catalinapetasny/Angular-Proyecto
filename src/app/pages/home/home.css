@@ -31,11 +31,6 @@
     margin: 1rem;
 }
 
-.card img {
-    width: 100%;
-    height: 100%;
-}
-
 .barraSuperior {
     display: flex;
     justify-content: center;
@@ -50,11 +45,12 @@
     color: white;
 }
 
-/* .truncate {
-    display: flex;
-    justify-content: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 300px;
-} */
+.imagenTarjeta {
+    height: 20rem;
+    object-fit: cover;
+}
+
+.imagenTarjeta2 {
+    height: 30rem;
+    object-fit: cover;
+}

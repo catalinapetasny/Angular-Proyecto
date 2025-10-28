@@ -31,7 +31,7 @@ export class Home {
         img: "../../../assets/mary.jfif",
         alt: "Autora",
         nombre: "Mary Shelley",
-        libros: "Frankenstein o el moderno Prometeo, El Último Hombre, Mathilda, entre otras."
+        libros: "Frankenstein o el moderno Prometeo, Mathilda, entre otras."
       },
 
       {
@@ -40,6 +40,14 @@ export class Home {
         alt: "Autor",
         nombre: "Dante Alighieri",
         libros: "Infierno, Purgatorio, Divina Comedia, entre otras."
+      }, 
+
+      {
+        id: "4A",
+        img: "../../../assets/shirley.jpg",
+        alt: "Autora",
+        nombre: "Shirley Jackson",
+        libros: "La Lotería, La Maldición de Hill House, entre otras"
       }
     ]
 
@@ -47,25 +55,28 @@ export class Home {
 
     this.infoTarjeta2 = [
       {
-        id: "4A",
+        id: 4,
         img: "../../../assets/it.jfif",
         alt: "It de Stephen King",
+        precio: 15000,
         tituloLibro: "It",
         autor: "Stephen King"
       },
 
       {
-        id: "5R",
+        id: 5,
         img: "../../../assets/cementerioDeAnimales.jfif",
         alt: "Cementerio de Animales de Stephen King",
+        precio: 15000,
         tituloLibro: "Cementerio de Animales",
         autor: "Stephen King"
       },
 
       {
-        id: "6O",
+        id: 6,
         img: "../../../assets/elResplandor.jfif",
         alt: "El Resplandor de Stephen King",
+        precio: 15000,
         tituloLibro: "El Resplandor",
         autor: "Stephen King"
       },
@@ -74,6 +85,7 @@ export class Home {
         id: "7C",
         img: "../../../assets/dante.jfif",
         alt: "The Inferno of Dante Alighieri",
+        precio: 15000,
         tituloLibro: "The Inferno of Dante A.",
         autor: "Dante Alighieri"
       },
@@ -82,7 +94,8 @@ export class Home {
         id: "8A",
         img: "../../../assets/frankeinstein.jfif",
         alt: "Frankenstein o el moderno Prometeo de Mary Shelley",
-        tituloLibro: "Frankenstein o el moderno Prometeo",
+        precio: 15000,
+        tituloLibro: "Frankenstein ",
         autor: "Mary Shelley"
       },
 
@@ -90,6 +103,7 @@ export class Home {
         id: "9T",
         img: "../../../assets/maldicion.jpg",
         alt: "La Maldición de Hill House de Shirley Jackson",
+        precio: 15000,
         tituloLibro: "La Maldición de Hill House",
         autor: "Shirley Jackson"
       },
@@ -98,6 +112,7 @@ export class Home {
         id: "10A",
         img: "../../../assets/elExorcista.png",
         alt: "El Exorcista de William Peter Blatty",
+        precio: 15000,
         tituloLibro: "El Exorcista",
         autor: "William Peter Blatty"
       },
@@ -106,6 +121,7 @@ export class Home {
         id: "11E",
         img: "../../../assets/carrie.jpg",
         alt: "Carrie de Stephen King",
+        precio: 15000,
         tituloLibro: "Carrie",
         autor: "Stephen King"
       },
