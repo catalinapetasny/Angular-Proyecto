@@ -1,5 +1,5 @@
 export interface Autores {
-    id: string;
+    id: number;
     img: string;
     alt: string;
     nombre: string;

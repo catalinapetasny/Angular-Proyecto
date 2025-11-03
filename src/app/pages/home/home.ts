@@ -19,7 +19,7 @@ export class Home {
     
     this.infoAutor = [
       {
-        id: "1G",
+        id: 1,
         img: "../../../assets/stephenKing.jfif",
         alt: "Autor",
         nombre: "Stephen King",
@@ -27,7 +27,7 @@ export class Home {
       },
 
       {
-        id: "2E",
+        id: 2,
         img: "../../../assets/mary.jfif",
         alt: "Autora",
         nombre: "Mary Shelley",
@@ -35,7 +35,7 @@ export class Home {
       },
 
       {
-        id: "3N",
+        id: 3,
         img: "../../../assets/Alighieri.jfif",
         alt: "Autor",
         nombre: "Dante Alighieri",
@@ -43,7 +43,7 @@ export class Home {
       }, 
 
       {
-        id: "4A",
+        id: 4,
         img: "../../../assets/shirley.jpg",
         alt: "Autora",
         nombre: "Shirley Jackson",
@@ -82,7 +82,7 @@ export class Home {
       },
 
       {
-        id: "7C",
+        id: 7,
         img: "../../../assets/dante.jfif",
         alt: "The Inferno of Dante Alighieri",
         precio: 15000,
@@ -91,7 +91,7 @@ export class Home {
       },
 
       {
-        id: "8A",
+        id: 8,
         img: "../../../assets/frankeinstein.jfif",
         alt: "Frankenstein o el moderno Prometeo de Mary Shelley",
         precio: 15000,
@@ -100,7 +100,7 @@ export class Home {
       },
 
       {
-        id: "9T",
+        id: 9,
         img: "../../../assets/maldicion.jpg",
         alt: "La Maldición de Hill House de Shirley Jackson",
         precio: 15000,
@@ -109,7 +109,7 @@ export class Home {
       },
 
       {
-        id: "10A",
+        id: 10,
         img: "../../../assets/elExorcista.png",
         alt: "El Exorcista de William Peter Blatty",
         precio: 15000,
@@ -118,7 +118,7 @@ export class Home {
       },
 
       {
-        id: "11E",
+        id: 11,
         img: "../../../assets/carrie.jpg",
         alt: "Carrie de Stephen King",
         precio: 15000,
