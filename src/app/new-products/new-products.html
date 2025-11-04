@@ -1,25 +1,37 @@
 <div class="container">
-    <h2>Nuevo Producto</h2>
+    <h2 style="color: white;">Nuevo Producto</h2>
 
-    <!-- <form [FormGroup] = ""> -->
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre">
-        </div>
-        <div class="mb-3">
-            <label for="id" class="form-label">Id</label>
-            <input type="number" id="id" class="form-control">
-        </div>
+    <!-- 
+    Inserto etiqueta "FormGroup" para crear un formulario 
+    y la igualo a su nombre 
+    
+    [formGroup] -> Directiva de formularios reactivos
+    -->
 
-        <div class="mb-3">
-            <label for="precio" class="form-label">Precio</label>
-            <input id="precio" type="number" class="form-control">
-        </div>
-
+    <form [formGroup]="nuevoProducto" (ngSubmit)="crearProducto()">
 
         <div class="mb-3">
-            <label for="descripcion" class="form-label">Descripcion</label>
-            <input type="text" id="descripcion" class="form-control">
+            <label for="nombre" class="form-label" style="color: white;">Nombre</label>
+            <!-- formControlName -> Atributo que vincule com la informacion de mi propiedad -->
+            <input id="nombre" type="text" class="form-control" formControlName="nombre">
         </div>
-    <!-- </form> -->
+
+        <div class="mb-3">
+            <label for="descripcion" class="form-label" style="color: white;">Descripcion</label>
+            <input type="text" id="descripcion" class="form-control" formControlName="descripcion">
+        </div>
+
+        <div class="mb-3">
+            <label for="precio" class="form-label" style="color: white;">Precio</label>
+            <input id="precio" type="number" class="form-control" formControlName="precio">
+        </div>
+
+        <!-- el boton se deshabilita cuando el "nuevoProducto" no es válido
+        ej: faltan campos por rellenar o no cumplen el valor esperado -->
+
+        <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoProducto.valid">
+            Enviar :3
+        </button>
+
+    </form> 
 </div>

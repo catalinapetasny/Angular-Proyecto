@@ -4,6 +4,7 @@ import { Contacts } from './pages/contacts/contacts';
 import { About } from './pages/about/about';
 import { Products } from './pages/products/products';
 import { Music } from './pages/music/music';
+import { NewProducts } from './new-products/new-products';
 
 export const routes: Routes = [
     {
@@ -26,5 +27,8 @@ export const routes: Routes = [
     },
     {
         path: 'music', component: Music
+    },
+    {
+        path: 'new-products', component: NewProducts
     }
 ];
