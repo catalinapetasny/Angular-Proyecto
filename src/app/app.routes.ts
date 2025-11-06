@@ -30,5 +30,8 @@ export const routes: Routes = [
     },
     {
         path: 'new-products', component: NewProducts
-    }
+    },
+
 ];
+
+    // {path 'ofertas', component: Ofertas}
