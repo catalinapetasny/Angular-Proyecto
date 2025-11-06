@@ -2,12 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
 
 body {
-    background-color: black;
+  margin: 0;
+  /*Fondo degradado*/
+  background: linear-gradient(to bottom, #000000, #0d0d0d, #1a1a1a, #262626, #333333);
+  background-attachment: fixed;
+  color: white;
 }
 
-*{
-  font-family: "Alan Sans", sans-serif;
+* {
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal; 
+  font-style: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
