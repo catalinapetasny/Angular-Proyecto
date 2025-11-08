@@ -41,6 +41,9 @@
 }
 
 .tituloh3 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
     padding: 1rem;
     color: white;
 }

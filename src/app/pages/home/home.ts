@@ -23,15 +23,15 @@ export class Home {
         img: "../../../assets/stephenKing.jfif",
         alt: "Autor",
         nombre: "Stephen King",
-        libros: "It, Cementerio de Animales, El Resplandor, entre otros."
+        libros: "It, Cementerio de Animales, El Resplandor, entre otras."
       },
 
       {
         id: 2,
-        img: "../../../assets/mary.jfif",
-        alt: "Autora",
-        nombre: "Mary Shelley",
-        libros: "Frankenstein o el moderno Prometeo, Mathilda, entre otras."
+        img: "../../../assets/edgar.jpg",
+        alt: "Autor",
+        nombre: "Edgar Allan Poe",
+        libros: "El cuervo, El corazón delator entre otras."
       },
 
       {
