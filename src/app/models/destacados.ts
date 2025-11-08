@@ -6,3 +6,12 @@ export interface Destacados {
     tituloLibro: string;
     autor?: string;
 }
+
+export interface Musica {
+    id: number;
+    img?: string;
+    alt?:string;
+    precio: number;
+    tituloDisco: string;
+    artista?: string;
+}

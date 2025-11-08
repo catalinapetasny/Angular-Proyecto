@@ -1,5 +1,40 @@
 <h1 id="title">Usagi's Horror Books</h1>
 
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../../assets/Banner Black Friday Moderno.png" class="img-fluid w-50 d-block mx-auto"
+                alt="Black Friday">
+        </div>
+        <!-- -->
+        <div class="carousel-item">
+            <img src="../../assets/design.png" class="img-fluid w-50 d-block mx-auto" alt="meseta">
+        </div>
+        <div class="carousel-item">
+            <img src="../../assets/StrangerThingsBook.png" class="img-fluid w-50 d-block mx-auto" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
 <div class="barraSuperior">
     <h2>
         Autores destacados
@@ -55,31 +90,31 @@
 </div> <br>
 
 <!-- <div class="contenedorTarjetas row align-items-center card-top"> -->
-    <div class="tituloh3">
-        <h3 style="color: black;">
-            <b>
-                Los más buscados
-            </b>
-        </h3>
-    </div> <br> <br>
+<div class="tituloh3">
+    <h3 style="color: black;">
+        <b>
+            Los más buscados en librería
+        </b>
+    </h3>
+</div> <br> <br>
 
-    <div class="container">
-        <div class="row">
-            <div *ngFor="let i of infoTarjeta2" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
-                <div class="card">
-                    <img src="{{ i.img }}" class="card-img-top imagenTarjeta2" alt="{{ i.alt }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ i.tituloLibro }}</h5>
-                        <p class="card-text">{{ i.autor }}</p>
-                        <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verMasInfo"
-                            (click)="verInfo(i)">
-                            Agregar al Carrito
-                        </button>
-                    </div>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of infoTarjeta2" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="card">
+                <img src="{{ i.img }}" class="card-img-top imagenTarjeta2" alt="{{ i.alt }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ i.tituloLibro }}</h5>
+                    <p class="card-text">{{ i.autor }}</p>
+                    <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verMasInfo"
+                        (click)="verInfo(i)">
+                        Agregar al Carrito
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+</div>
 <!-- </div> -->
 
 <!-- Modal -->
@@ -106,3 +141,55 @@
         </div>
     </div>
 </div>
+
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-md-3 mb-3">
+            <div class="p-4 shadow-sm rounded-3 bg-white">
+                <div class="icon mb-2">
+                    <i class="bi bi-truck" style="font-size: 2rem; color: #e63946;"></i>
+                </div>
+                <h5 class="fw-bold" style="color: black;">Métodos de envío</h5>
+                <p style="color: black;">Envíos en el día. Envío gratis en compras superiores a $35.000</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="p-4 shadow-sm rounded-3 bg-white">
+                <div class="icon mb-2">
+                    <i class="bi bi-arrow-repeat" style="font-size: 2rem; color: #e63946;"></i>
+                </div>
+                <h5 class="fw-bold" style="color: black;">Puntos eXtra!</h5>
+                <p style="color: black;">Sumá puntos para canjear en nuestras sucursales</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="p-4 shadow-sm rounded-3 bg-white">
+                <div class="icon mb-2">
+                    <i class="bi bi-percent" style="font-size: 2rem; color: #e63946;"></i>
+                </div>
+                <h5 class="fw-bold" style="color: black;">Promociones</h5>
+                <p style="color: black;">Conocé nuestras promos bancarias</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="p-4 shadow-sm rounded-3 bg-white">
+                <div class="icon mb-2">
+                    <i class="bi bi-shield-lock" style="font-size: 2rem; color: #e63946;"></i>
+                </div>
+                <h5 class="fw-bold" style="color: black;">Sitio 100% seguro</h5>
+                <p style="color: black;">Tu compra está protegida en todo momento</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tituloh3">
+    <h3 style="color: black;">
+        <b>
+            Los más buscados en música
+        </b>
+    </h3>
+</div> <br> <br>

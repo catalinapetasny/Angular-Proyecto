@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Autores } from '../../models/autores';
-import { Destacados } from '../../models/destacados';
+import { Destacados, Musica } from '../../models/destacados';
 
 @Component({
   selector: 'app-home',
@@ -12,11 +12,12 @@ import { Destacados } from '../../models/destacados';
 export class Home {
   public infoAutor: Autores[];
   public infoTarjeta2: Destacados[];
+  public infoMusica: Musica[];
 
   constructor() {
 
     /* Info Autores */
-    
+
     this.infoAutor = [
       {
         id: 1,
@@ -40,7 +41,7 @@ export class Home {
         alt: "Autor",
         nombre: "Dante Alighieri",
         libros: "Infierno, Purgatorio, Divina Comedia, entre otras."
-      }, 
+      },
 
       {
         id: 4,
@@ -101,11 +102,11 @@ export class Home {
 
       {
         id: 9,
-        img: "../../../assets/maldicion.jpg",
-        alt: "La Maldición de Hill House de Shirley Jackson",
+        img: "../../../assets/descarga.jpeg",
+        alt: "El Corazón Delator de Edgar Allan Poe",
         precio: 15000,
-        tituloLibro: "La Maldición de Hill House",
-        autor: "Shirley Jackson"
+        tituloLibro: "El Corazón Delator",
+        autor: "Edgar Allan Poe"
       },
 
       {
@@ -126,6 +127,11 @@ export class Home {
         autor: "Stephen King"
       },
     ]
+
+    this.infoMusica = [
+      
+    ]
+
   }
 
   seleccionarTarjeta: any = null;
