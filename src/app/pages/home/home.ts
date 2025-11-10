@@ -169,7 +169,7 @@ export class Home {
     this.infoMusica = [
       {
         id: 16,
-        img: "../../../assets/Metallica - Metallica 1991.jpeg",
+        img: "../../../assets/Metallica - Metallica 1991.png",
         alt: "Metallica - Metallica (1991)",
         precio: 58990,
         tituloDisco: "Metallica",
@@ -177,7 +177,7 @@ export class Home {
       },
       {
         id: 17,
-        img: "../../../assets/Back-In-Black.jpeg",
+        img: "../../../assets/Back-In-Black.png",
         alt: "AC/DC - Back In Black (1980)",
         precio: 58990,
         tituloDisco: "Back In Black",
@@ -185,7 +185,7 @@ export class Home {
       },
       {
         id: 18,
-        img: "../../../assets/Destroyer.jpeg",
+        img: "../../../assets/Destroyer.png",
         alt: "KISS - Destroyer (1976)",
         precio: 58990,
         tituloDisco: "Destroyer",
@@ -193,7 +193,7 @@ export class Home {
       },
       {
         id: 19,
-        img: "../../../assets/Hybrid Theory- Linkin Park.jpeg",
+        img: "../../../assets/Hybrid Theory- Linkin Park.png",
         alt: "Linkin Park - Hybrid Theory (2000)",
         precio: 58990,
         tituloDisco: "Hybrid Theory",
@@ -201,7 +201,7 @@ export class Home {
       },
       {
         id: 20,
-        img: "../../../assets/americanIdiot.jpeg",
+        img: "../../../assets/americanIdiot.png",
         alt: "Green Day - American Idiot (2004)",
         precio: 58990,
         tituloDisco: "American Idiot",
@@ -209,7 +209,7 @@ export class Home {
       },
       {
         id: 21,
-        img: "../../../assets/demonDays.jpg",
+        img: "../../../assets/demonDays.png",
         alt: "Gorillaz - Demon Days (2005)",
         precio: 58990,
         tituloDisco: "Demon Days",
@@ -217,7 +217,7 @@ export class Home {
       },
       {
         id: 22,
-        img: "../../../assets/nevermind.jpeg",
+        img: "../../../assets/nevermind.png",
         alt: "Nirvana - Nevermind (1991)",
         precio: 58990,
         tituloDisco: "Nevermind",
@@ -225,7 +225,7 @@ export class Home {
       },
       {
         id: 23,
-        img: "../../../assets/theColorAnd.jpeg",
+        img: "../../../assets/theColorAnd.png",
         alt: "Foo Fighters - The Color And The Shape (1997)",
         precio: 58990,
         tituloDisco: "The Color And The Shape",
@@ -233,7 +233,7 @@ export class Home {
       },
       {
         id: 24,
-        img: "../../../assets/toxicity.jpeg",
+        img: "../../../assets/toxicity.png",
         alt: "System Of a Down - Toxicity (2001)",
         precio: 58990,
         tituloDisco: "Toxicity",
@@ -241,7 +241,7 @@ export class Home {
       },
       {
         id: 25,
-        img: "../../../assets/appetiteForDest.jpeg",
+        img: "../../../assets/appetiteForDest.png",
         alt: "Guns N' Roses - Appetite For Destruction (1987)",
         precio: 58990,
         tituloDisco: "Appetite For Destruction",
@@ -249,7 +249,7 @@ export class Home {
       },
       {
         id: 26,
-        img: "../../../assets/bohemianRhapsody.jpeg",
+        img: "../../../assets/bohemianRhapsody.png",
         alt: "Queen - Queen II (1974)",
         precio: 76980,
         tituloDisco: "Queen II",
@@ -257,7 +257,7 @@ export class Home {
       },
       {
         id: 27,
-        img: "../../../assets/Black Sabbath - Paranoid (1970).jpeg",
+        img: "../../../assets/Black Sabbath - Paranoid (1970).png",
         alt: "Black Sabbath - Paranoid (1970)",
         precio: 58990,
         tituloDisco: "Paranoid",
