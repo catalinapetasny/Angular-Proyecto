@@ -28,13 +28,33 @@
         </li>
 
         <!--4to li: Products-->
-        <li class="nav-item">
-          <a class="nav-link" href="products">Products</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="products">Todo</a></li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li><a class="dropdown-item" href="Secciones/producto-section1/">Ofertas</a></li>
+
+            <li><a class="dropdown-item" href="Secciones/producto-section2/">Novedades</a></li>
+
+            <li><a class="dropdown-item" href="#">Ayuda</a></li>
+
+          </ul>
+
         </li>
 
         <li class="nav-item">
           <a class="nav-link" href="music">Music</a>
         </li>
+
+
 
       </ul>
 
@@ -49,7 +69,6 @@
 
 
 <!--Etiqueta que muestra el contenido de mi aplicación-->
-
 <router-outlet></router-outlet>
 
 

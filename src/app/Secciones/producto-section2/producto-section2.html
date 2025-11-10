@@ -1,1 +1,31 @@
-<p>producto-section2 works!</p>
+<div>
+    <h1 class="tituloNovedades">
+        ¡Últimas novedades!
+    </h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of Libro" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="card">
+                <img src="{{ i.img }}" class="card-img-top imagenTarjeta2" alt="{{ i.alt }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ i.tituloLibro }}</h5>
+                    <p class="card-text">
+                        <!--
+                        Usa el pipe 'number' para formatear con separador de miles
+                        y agrego manualmente el símbolo $
+                    -->
+                        Precio: ${{ i.precio | number:'1.0-0' }}
+                    </p>
+
+                    <p class="card-text">{{ i.autor }}</p>
+                    <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verMasInfo"
+                        (click)="verInformacion(i)">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

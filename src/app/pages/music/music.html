@@ -1,49 +1,81 @@
-<h1>Usagi's Music Section</h1>
+<h1 style="font-weight: bold;">
+    Usagi's Music Section
+</h1>
 
 <div class="banner">
-    <h2 style="color: black;">
+    <h2 style="color: black; font-weight: bold;">
         ¡Nuestros artistas destacados!
     </h2>
 </div>
 
-<div class="contenedor">
-
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/acdc.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5>AC/DC</h5>
-            <p class="card-text">descripcion</p>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of infoArtista" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="card">
+                <img class="card-img-top imagenTarjeta" src="{{ i.img }}"  alt="{{ i.alt }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ i.nombre }}</h5>
+                    <p class="card-text">{{ i.descripcion }}</p>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/greenDay.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5>Green Day</h5>
-            <p class="card-text">descripcion</p>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/linkinPark.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5>Linkin Park</h5>
-            <p class="card-text">descripcion</p>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <img src="../../../assets/gorillaz.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5>Gorillaz</h5>
-            <p class="card-text">descripcion</p>
-        </div>
-    </div>
-
-</div> <br> <br> <br> <br>
+</div> 
 
 <div class="banner">
-    <h2 style="color: black;">
+    <h2 style="color: black; font-weight: bold;">
         ¡Albumes más vendidos!
     </h2>
+</div> <br> <br> <br> <br>
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of infoMusica" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="card">
+                <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ i.tituloDisco }}</h5>
+                    <p class="card-text">
+                        <!--
+                        Usa el pipe 'number' para formatear con separador de miles
+                        y agrega manualmente el símbolo $
+                    -->
+                        Precio: ${{ i.precio | number:'1.0-0' }}
+                    </p>
+
+                    <p class="card-text">{{ i.artista }}</p>
+                    <button type="button" class="btn btn-action" data-bs-toggle="modal"
+                        data-bs-target="#verMasInformacion" (click)="verMasInformacion(i)">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Albumes más vendidos -->
+<div class="modal fade" id="verMasInformacion" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Álbum Seleccionado</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-imagen">
+                    <img src="{{selectCard?.img}}" alt="{{selectCard?.alt}}">
+                </div>
+
+                <div class="modal-descripcion">
+                    {{selectCard?.artista}} <br>
+                    {{selectCard?. tituloDisco}}
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agregar</button>
+            </div>
+        </div>
+    </div>
 </div>
