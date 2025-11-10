@@ -37,7 +37,9 @@
 
 <div class="barraSuperior">
     <h2>
-        Autores destacados
+        <b>
+            ¡Autores destacados!
+        </b>
     </h2>
 </div>
 
@@ -105,6 +107,14 @@
                 <img src="{{ i.img }}" class="card-img-top imagenTarjeta2" alt="{{ i.alt }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ i.tituloLibro }}</h5>
+                    <p class="card-text">
+                    <!--
+                        Usa el pipe 'number' para formatear con separador de miles
+                        y agrega manualmente el símbolo $
+                    -->
+                        Precio: ${{ i.precio | number:'1.0-0' }}
+                    </p>
+
                     <p class="card-text">{{ i.autor }}</p>
                     <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verMasInfo"
                         (click)="verInfo(i)">
@@ -159,7 +169,7 @@
                 <div class="icon mb-2">
                     <i class="bi bi-arrow-repeat" style="font-size: 2rem; color: #e63946;"></i>
                 </div>
-                <h5 class="fw-bold" style="color: black;">Puntos eXtra!</h5>
+                <h5 class="fw-bold" style="color: black;">Puntos extra!</h5>
                 <p style="color: black;">Sumá puntos para canjear en nuestras sucursales</p>
             </div>
         </div>
@@ -189,7 +199,62 @@
 <div class="tituloh3">
     <h3 style="color: black;">
         <b>
+            ¡Artistas destacados!
+        </b>
+    </h3>
+</div> <br> <br>
+
+<!-- Información artistas -->
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of infoArtista" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="card">
+                <img src="{{ i.img }}" class="card-img-top imagenArtista" alt="{{ i.alt }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ i.nombre }}</h5>
+                    <p class="card-text">{{ i.descripcion }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tituloh3">
+    <h3 style="color: black;">
+        <b>
             Los más buscados en música
         </b>
     </h3>
 </div> <br> <br>
+
+<!-- Álbumes más buscados -->
+
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of infoMusica" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="card">
+                <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ i.tituloDisco }}</h5>
+                    <p class="card-text">
+                    <!--
+                        Usa el pipe 'number' para formatear con separador de miles
+                        y agrega manualmente el símbolo $
+                    -->
+                        Precio: ${{ i.precio | number:'1.0-0' }}
+                    </p>
+
+                    <p class="card-text">{{ i.artista }}</p>
+                    <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verMasInformacion"
+                        (click)="verMasInformacion(i)">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->

@@ -1,3 +1,4 @@
+//Libros
 export interface Destacados {
     id: number; //ID <- Tipo number para que pueda ser auto incremental
     img?: string; //? -> Indica que no es una propiedad estrictamente obligatoria 
@@ -7,6 +8,7 @@ export interface Destacados {
     autor?: string;
 }
 
+//Albumes
 export interface Musica {
     id: number;
     img?: string;
