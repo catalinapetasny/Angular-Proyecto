@@ -1,5 +1,6 @@
 <h1 id="title">Usagi's Horror Books</h1>
 
+<!-- Carrusel del Home -->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -18,7 +19,7 @@
         </div>
         <!-- -->
         <div class="carousel-item">
-            <img src="../../assets/design.png" class="img-fluid w-50 d-block mx-auto" alt="mersa">
+            <img src="../../assets/mersa.png" class="img-fluid w-50 d-block mx-auto" alt="mersa">
         </div>
         <div class="carousel-item">
             <img src="../../assets/StrangerThingsBook.png" class="img-fluid w-50 d-block mx-auto" alt="Stranger Things">
@@ -36,7 +37,7 @@
     </button>
 </div>
 
-
+<!-- Encabezado 1  -->
 <div class="barraSuperior">
     <h2>
         <b>
@@ -46,7 +47,6 @@
 </div>
 
 <!-- Información de autores -->
-
 <div class="container">
     <div class="row">
         <div *ngFor="let i of infoAutor" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
@@ -154,6 +154,7 @@
     </div>
 </div>
 
+<!-- Separación entre Libros y Música -->
 <div class="container my-5"> 
     <!-- agregá un margen de 3 rem arriba y abajo -->
     <div class="row text-center">
@@ -199,6 +200,7 @@
     </div>
 </div>
 
+<!-- Encabezado 2 -->
 <div class="tituloh3">
     <h3 style="color: black;">
         <b>
@@ -208,7 +210,6 @@
 </div> <br> <br>
 
 <!-- Información artistas -->
-
 <div class="container">
     <div class="row">
         <div *ngFor="let i of infoArtista" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
@@ -273,8 +274,8 @@
                 </div>
 
                 <div class="modal-descripcion">
-                    {{selectCard?.artista}}
-                    <!-- {{selectCard?.}} -->
+                    {{selectCard?.artista}} <br>
+                    Album: {{selectCard?.tituloDisco}}
                 </div>
 
             </div>
