@@ -28,10 +28,9 @@ export const routes: Routes = [
     {
         path: 'music', component: Music
     },
-    // {
-    //     path: 'ProductoSection2', component: Novedades 
-    // },
+    //{path: 'ofertas', component: Ofertas},
+    // {path: 'ProductoSection2', component: Novedades },
 
 ];
 
-    // {path 'ofertas', component: Ofertas}
+    // 

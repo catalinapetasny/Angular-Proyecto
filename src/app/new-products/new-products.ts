@@ -56,6 +56,8 @@ export class NewProducts {
       //Agregamos un nuevo producto a colección productos
       this.coleccionProductos.push(nuevoProducto);
 
+      alert("Se creó el nuevo producto con éxito! \n" +nuevoProducto)
+
       console.log(`Producto agregado: ${nuevoProducto}`);
       console.log(`Coleccion actual de productos: ${this.coleccionProductos}`);
       
