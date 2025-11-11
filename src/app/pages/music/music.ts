@@ -26,7 +26,7 @@ export class Music {
       },
       {
         id: 13,
-        img: "../../../assets/greenDay.jpeg",
+        img: "../../../assets/GreenDayFoto.png",
         alt: "Green Day",
         nombre: "Green Day",
         descripcion: "Banda de punk rock estadounidense"
