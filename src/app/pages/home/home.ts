@@ -171,7 +171,7 @@ export class Home {
         id: 16,
         img: "../../../assets/Metallica - Metallica 1991.png",
         alt: "Metallica - Metallica (1991)",
-        precio: 58990,
+        precio: 13299,
         tituloDisco: "Metallica",
         artista: "Metallica"
       },
@@ -179,7 +179,7 @@ export class Home {
         id: 17,
         img: "../../../assets/Back-In-Black.png",
         alt: "AC/DC - Back In Black (1980)",
-        precio: 58990,
+        precio: 141900,
         tituloDisco: "Back In Black",
         artista: "AC/DC"
       },
@@ -187,7 +187,7 @@ export class Home {
         id: 18,
         img: "../../../assets/Destroyer.png",
         alt: "KISS - Destroyer (1976)",
-        precio: 58990,
+        precio: 120000,
         tituloDisco: "Destroyer",
         artista: "KISS"
       },
@@ -195,7 +195,7 @@ export class Home {
         id: 19,
         img: "../../../assets/Hybrid Theory- Linkin Park.png",
         alt: "Linkin Park - Hybrid Theory (2000)",
-        precio: 58990,
+        precio: 29000,
         tituloDisco: "Hybrid Theory",
         artista: "Linkin Park"
       },
@@ -203,7 +203,7 @@ export class Home {
         id: 20,
         img: "../../../assets/americanIdiot.png",
         alt: "Green Day - American Idiot (2004)",
-        precio: 58990,
+        precio: 22600,
         tituloDisco: "American Idiot",
         artista: "Green Day"
       },
@@ -211,7 +211,7 @@ export class Home {
         id: 21,
         img: "../../../assets/demonDays.png",
         alt: "Gorillaz - Demon Days (2005)",
-        precio: 58990,
+        precio: 35600,
         tituloDisco: "Demon Days",
         artista: "Gorillaz"
       },
@@ -219,7 +219,7 @@ export class Home {
         id: 22,
         img: "../../../assets/nevermind.png",
         alt: "Nirvana - Nevermind (1991)",
-        precio: 58990,
+        precio: 22100,
         tituloDisco: "Nevermind",
         artista: "Nirvana"
       },
@@ -227,7 +227,7 @@ export class Home {
         id: 23,
         img: "../../../assets/theColorAnd.png",
         alt: "Foo Fighters - The Color And The Shape (1997)",
-        precio: 58990,
+        precio: 30799,
         tituloDisco: "The Color And The Shape",
         artista: "Foo Fighters"
       },
@@ -235,7 +235,7 @@ export class Home {
         id: 24,
         img: "../../../assets/toxicity.png",
         alt: "System Of a Down - Toxicity (2001)",
-        precio: 58990,
+        precio: 39500,
         tituloDisco: "Toxicity",
         artista: "System Of a Down"
       },
@@ -243,7 +243,7 @@ export class Home {
         id: 25,
         img: "../../../assets/appetiteForDest.png",
         alt: "Guns N' Roses - Appetite For Destruction (1987)",
-        precio: 58990,
+        precio: 23400,
         tituloDisco: "Appetite For Destruction",
         artista: "Guns N' Roses"
       },
@@ -251,7 +251,7 @@ export class Home {
         id: 26,
         img: "../../../assets/bohemianRhapsody.png",
         alt: "Queen - Queen II (1974)",
-        precio: 76980,
+        precio: 62999,
         tituloDisco: "Queen II",
         artista: "Queen"
       },
@@ -259,7 +259,7 @@ export class Home {
         id: 27,
         img: "../../../assets/Black Sabbath - Paranoid (1970).png",
         alt: "Black Sabbath - Paranoid (1970)",
-        precio: 58990,
+        precio: 20600,
         tituloDisco: "Paranoid",
         artista: "Black Sabbath"
       }

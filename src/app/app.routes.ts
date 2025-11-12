@@ -10,7 +10,7 @@ export const routes: Routes = [
     {
         /* Definimos ruta general o raíz en específico
         que nos lleve a la ruta Home*/
-        path : "", component : Home
+        path: "", component: Home
 
     },
     {
@@ -28,9 +28,8 @@ export const routes: Routes = [
     {
         path: 'music', component: Music
     },
-    //{path: 'ofertas', component: Ofertas},
-    // {path: 'ProductoSection2', component: Novedades },
 
 ];
 
-    // 
+//{path: 'ofertas', component: Ofertas},
+// {path: 'ProductoSection2', component: Novedades },
