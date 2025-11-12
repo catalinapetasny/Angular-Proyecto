@@ -30,7 +30,7 @@ export class Home {
 
       {
         id: 2,
-        img: "../../../assets/edgar.jpg",
+        img: "../../../assets/edgar.png",
         alt: "Autor",
         nombre: "Edgar Allan Poe",
         libros: "El cuervo, El corazón delator entre otras."
@@ -38,7 +38,7 @@ export class Home {
 
       {
         id: 3,
-        img: "../../../assets/Alighieri.jfif",
+        img: "../../../assets/dante.png",
         alt: "Autor",
         nombre: "Dante Alighieri",
         libros: "Infierno, Purgatorio, Divina Comedia, entre otras."
@@ -46,7 +46,7 @@ export class Home {
 
       {
         id: 4,
-        img: "../../../assets/shirley.jpg",
+        img: "../../../assets/shirley.png",
         alt: "Autora",
         nombre: "Shirley Jackson",
         libros: "La Lotería, La Maldición de Hill House, entre otras"

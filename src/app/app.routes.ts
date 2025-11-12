@@ -4,6 +4,7 @@ import { Contacts } from './pages/contacts/contacts';
 import { About } from './pages/about/about';
 import { Products } from './pages/products/products';
 import { Music } from './pages/music/music';
+import { Oferta } from './pages/oferta/oferta';
 // import { ProductoSection2 } from './Secciones/producto-section2/producto-section2';
 
 export const routes: Routes = [
@@ -28,6 +29,9 @@ export const routes: Routes = [
     {
         path: 'music', component: Music
     },
+    {
+        path: 'Ofertas', component: Oferta
+    }
 
 ];
 
