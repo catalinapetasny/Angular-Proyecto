@@ -18,28 +18,28 @@ export class Music {
   constructor() {
     this.infoArtista = [
       {
-        id: 12,
+        id: 1,
         img: "../../../assets/acdc.jpeg",
         alt: "AC/DC",
         nombre: "AC/DC",
         descripcion: "Banda de rock británica"
       },
       {
-        id: 13,
+        id: 2,
         img: "../../../assets/GreenDayFoto.png",
         alt: "Green Day",
         nombre: "Green Day",
         descripcion: "Banda de punk rock estadounidense"
       },
       {
-        id: 14,
+        id: 3,
         img: "../../../assets/LinkinPark.jpeg",
         alt: "Linkin Park",
         nombre: "Linkin Park",
         descripcion: "Banda de rock alternativo estadounidense"
       },
       {
-        id: 15,
+        id: 4,
         img: "../../../assets/gorillaz.jpeg",
         alt: "Gorillaz",
         nombre: "Gorillaz",
@@ -48,8 +48,8 @@ export class Music {
     ]
 
     this.infoMusica = [
-            {
-        id: 16,
+      {
+        id: 5,
         img: "../../../assets/Metallica - Metallica 1991.png",
         alt: "Metallica - Metallica (1991)",
         precio: 58990,
@@ -57,7 +57,7 @@ export class Music {
         artista: "Metallica"
       },
       {
-        id: 17,
+        id: 6,
         img: "../../../assets/Back-In-Black.png",
         alt: "AC/DC - Back In Black (1980)",
         precio: 58990,
@@ -65,7 +65,7 @@ export class Music {
         artista: "AC/DC"
       },
       {
-        id: 18,
+        id: 7,
         img: "../../../assets/Destroyer.png",
         alt: "KISS - Destroyer (1976)",
         precio: 58990,
@@ -73,7 +73,7 @@ export class Music {
         artista: "KISS"
       },
       {
-        id: 19,
+        id: 8,
         img: "../../../assets/Hybrid Theory- Linkin Park.png",
         alt: "Linkin Park - Hybrid Theory (2000)",
         precio: 58990,
@@ -81,7 +81,7 @@ export class Music {
         artista: "Linkin Park"
       },
       {
-        id: 20,
+        id: 9,
         img: "../../../assets/americanIdiot.png",
         alt: "Green Day - American Idiot (2004)",
         precio: 58990,
@@ -89,7 +89,7 @@ export class Music {
         artista: "Green Day"
       },
       {
-        id: 21,
+        id: 10,
         img: "../../../assets/demonDays.png",
         alt: "Gorillaz - Demon Days (2005)",
         precio: 58990,
@@ -97,7 +97,7 @@ export class Music {
         artista: "Gorillaz"
       },
       {
-        id: 22,
+        id: 11,
         img: "../../../assets/nevermind.png",
         alt: "Nirvana - Nevermind (1991)",
         precio: 58990,
@@ -105,7 +105,7 @@ export class Music {
         artista: "Nirvana"
       },
       {
-        id: 23,
+        id: 12,
         img: "../../../assets/theColorAnd.png",
         alt: "Foo Fighters - The Color And The Shape (1997)",
         precio: 58990,
@@ -113,7 +113,7 @@ export class Music {
         artista: "Foo Fighters"
       },
       {
-        id: 24,
+        id: 13,
         img: "../../../assets/toxicity.png",
         alt: "System Of a Down - Toxicity (2001)",
         precio: 58990,
@@ -121,7 +121,7 @@ export class Music {
         artista: "System Of a Down"
       },
       {
-        id: 25,
+        id: 14,
         img: "../../../assets/appetiteForDest.png",
         alt: "Guns N' Roses - Appetite For Destruction (1987)",
         precio: 58990,
@@ -129,7 +129,7 @@ export class Music {
         artista: "Guns N' Roses"
       },
       {
-        id: 26,
+        id: 15,
         img: "../../../assets/bohemianRhapsody.png",
         alt: "Queen - Queen II (1974)",
         precio: 76980,
@@ -137,20 +137,84 @@ export class Music {
         artista: "Queen"
       },
       {
-        id: 27,
+        id: 16,
         img: "../../../assets/Black Sabbath - Paranoid (1970).png",
         alt: "Black Sabbath - Paranoid (1970)",
         precio: 58990,
         tituloDisco: "Paranoid",
         artista: "Black Sabbath"
+      },
+      {
+        id: 17,
+        img: "../../../assets/fallen.png",
+        alt: "Fallen - Evanescene (2003)",
+        precio: 127000,
+        tituloDisco: "Fallen",
+        artista: "Evanescene"
+      },
+      {
+        id: 19,
+         img: "../../../assets/Sabbath Bloody Sabbath.png",
+        alt: "Sabbath Bloody Sabbath - Black Sabbath (1973)",
+        precio: 127000,
+        tituloDisco: "Sabbath Bloody Sabbath",
+        artista: "Black Sabbath"
+      },
+      {
+        id: 20,
+        img: "../../../assets/bornAgain.png",
+        alt: "Born Again - Black Sabbath (1973)",
+        precio: 127000,
+        tituloDisco: "Born Again",
+        artista: "Black Sabbath"
+      },
+      {
+        id: 21,
+        img: "../../../assets/TNT.png",
+        alt: "High Voltage - AC/DC (1976)",
+        precio: 127000,
+        tituloDisco: "TNT",
+        artista: "AC/DC"
+      },
+      {
+        id: 22,
+        img: "../../../assets/highwayToHell.png",
+        alt: "Highway To Hell - AC/DC (1979)",
+        precio: 127000,
+        tituloDisco: "Highway To Hell",
+        artista: "AC/DC"
+      },
+      {
+        id: 23,
+        img: "../../../assets/TheRazorsEdge.png",
+        alt: "The Razors Edge - AC/DC (1990)",
+        precio: 127000,
+        tituloDisco: "The Razors Edge",
+        artista: "AC/DC"
+      },
+      {
+        id: 24,
+        img: "../../../assets/Mutter.png",
+        alt: "Mutter - Rammstein (2001)",
+        precio: 127000,
+        tituloDisco: "The Razors Edge",
+        artista: "Rammstein"
+      },
+      {
+        id: 25,
+        img: "../../../assets/Sehnsucht.png",
+        alt: "Sehnsucht - Rammstein",
+        precio: 127000,
+        tituloDisco: "Sehnsucht",
+        artista: "Rammstein"
       }
     ];
   }
 
-    selectCard: any = null;
+  selectCard: any = null;
 
   verMasInformacion(tarjeta: any) {
     this.selectCard = tarjeta;
   }
-  
+
 }

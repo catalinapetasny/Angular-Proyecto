@@ -1,52 +1,54 @@
 .btn-action {
-    background-color: black;
-    color: pink;
+  background-color: black;
+  color: pink;
 }
 
 .btn-action:hover {
-    background-color: deeppink;
+  background-color: deeppink;
 }
 
 .contenedorTarjetas {
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-    height: 1rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  height: 1rem;
 }
 
 /*Titulo llamado por ID*/
 #title {
-    color: white;
-    font-size: 35px;
-    text-align: center;
-    padding: 1rem;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem;
 }
 
+
 .barraSuperior {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    color: black;
-    padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
 }
 
 .tituloh3 {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    color: white;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: white;
 }
 
 .imagenTarjeta {
-    height: 20rem;
-    object-fit: cover;
+  height: 20rem;
+  object-fit: cover;
 }
 
 .imagenTarjeta2 {
-    height: 30rem;
-    object-fit: cover;
+  height: 30rem;
+  object-fit: cover;
 }
 
 .info-cards {
@@ -59,19 +61,10 @@
   max-width: 1100px;
 }
 
-/* .card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 240px;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-} */
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .icon {

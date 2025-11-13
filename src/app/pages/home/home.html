@@ -14,8 +14,8 @@
         <div class="carousel-item active">
             <img src="../../assets/Banner Black Friday Moderno.png" class="img-fluid w-50 d-block mx-auto"
                 alt="Black Friday">
-            <!-- hace que la imagen se adapte al tamaño de pantalla, 
-            ocupe la mitad del ancho, y quede perfectamente centrada dentro del carrusel -->
+            <!-- hace que la imagen se adapte al tamaño de pantalla, ocupe la mitad del ancho, y 
+             quede perfectamente centrada dentro del carrusel -->
         </div>
         <!-- -->
         <div class="carousel-item">
@@ -47,14 +47,14 @@
 </div> <br>
 
 <!-- Información de autores -->
-<div class="container"> 
+<div class="container">
     <!-- col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4 
     col-12 col-lg-3 col-md-4 col-sm-6 
     -->
     <div class="row">
         <div *ngFor="let i of infoAutor" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
             <div class="card">
-                <img src="{{ i.img }}"  alt="{{ i.alt }}">
+                <img src="{{ i.img }}" alt="{{ i.alt }}">
                 <div class="card-body">
                     <h4 class="card-title"> {{ i.nombre }} </h4>
 
@@ -159,7 +159,7 @@
 </div>
 
 <!-- Separación entre Libros y Música -->
-<div class="container my-5"> 
+<div class="container my-5">
     <!-- agregá un margen de 3 rem arriba y abajo -->
     <div class="row text-center">
         <div class="col-md-3 mb-3">
@@ -218,7 +218,7 @@
     <div class="row">
         <div *ngFor="let i of infoArtista" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
             <div class="card">
-                <img class="card-img-top imagenTarjeta" src="{{ i.img }}"  alt="{{ i.alt }}">
+                <img class="card-img-top imagenTarjeta" src="{{ i.img }}" alt="{{ i.alt }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ i.nombre }}</h5>
                     <p class="card-text">{{ i.descripcion }}</p>
