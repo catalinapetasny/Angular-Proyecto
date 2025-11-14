@@ -197,7 +197,7 @@ export class Music {
         img: "../../../assets/Mutter.png",
         alt: "Mutter - Rammstein (2001)",
         precio: 127000,
-        tituloDisco: "The Razors Edge",
+        tituloDisco: "Mutter",
         artista: "Rammstein"
       },
       {

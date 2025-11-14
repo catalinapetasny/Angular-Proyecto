@@ -9,6 +9,8 @@
     
     sm (small): Tamaño de pantalla chico -> Celular
 -->
+
+<!-- Tarjetas de los primeros 4 productos -->
 <div class="container">
     <div class="row">
         <!--*ngFor - Es una directiva que permite iterar colecciones/arreglos.
@@ -31,7 +33,7 @@
 
                     <p class="card-text">{{ i.descripcion }} - {{ i.anualPublicacion }}</p>
 
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verMasInfo"
+                    <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verMasInfo"
                         (click)="verMasInfo(i)">
                         Ver mas
                     </button>
@@ -61,6 +63,112 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tarjetas de los productos destacados en el home -->
+
+<div class="container">
+    <div class="row">
+        <div *ngFor="let i of infoTarjeta2" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="card">
+                <img src="{{ i.img }}" class="card-img-top imagenTarjeta2" alt="{{ i.alt }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ i.tituloLibro }}</h5>
+                    <p class="card-text">
+                        <!--
+                        Usa el pipe 'number' para formatear con separador de miles
+                        y agrega manualmente el símbolo $
+                    -->
+                        Precio: ${{ i.precio | number:'1.0-0' }}
+                    </p>
+
+                    <p class="card-text">{{ i.autor }}</p>
+                    <button type="button" class="btn btn-action" data-bs-toggle="modal" data-bs-target="#verMasInfo"
+                        (click)="verMasInfo(i)">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </div> -->
+
+<!-- Modal Libros-->
+<div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Libro Seleccionado</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-imagen">
+                    <img src="{{tarjetaSeleccionada?.img}}" alt="{{tarjetaSeleccionada?.alt}}">
+                </div>
+
+                <div class="modal-descripcion">
+                    {{tarjetaSeleccionada?.autor}}
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tarjetas albumes -->
+ <div class="container">
+    <div class="row">
+        <div *ngFor="let i of infoMusica" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="card">
+                <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ i.tituloDisco }}</h5>
+                    <p class="card-text">
+                        <!--
+                        Usa el pipe 'number' para formatear con separador de miles
+                        y agrega manualmente el símbolo $
+                    -->
+                        Precio: ${{ i.precio | number:'1.0-0' }}
+                    </p>
+                    <p class="card-text">{{ i.artista }}</p>
+                    <button type="button" class="btn btn-action" data-bs-toggle="modal"
+                        data-bs-target="#verMasInfo" (click)="verMasInfo(i)">
+                        Agregar al Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Albumes más vendidos -->
+<div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Álbum Seleccionado</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-imagen">
+                    <img src="{{tarjetaSeleccionada?.img}}" alt="{{tarjetaSeleccionada?.alt}}">
+                </div>
+
+                <div class="modal-descripcion">
+                    {{tarjetaSeleccionada?.artista}} <br>
+                    {{tarjetaSeleccionada?. tituloDisco}}
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Agregar</button>
             </div>
         </div>
     </div>

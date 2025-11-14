@@ -5,6 +5,8 @@ import { About } from './pages/about/about';
 import { Products } from './pages/products/products';
 import { Music } from './pages/music/music';
 import { Oferta } from './pages/oferta/oferta';
+import { Galeria } from './pages/galeria/galeria';
+import { Libros } from './pages/libros/libros';
 // import { ProductoSection2 } from './Secciones/producto-section2/producto-section2';
 
 export const routes: Routes = [
@@ -27,13 +29,17 @@ export const routes: Routes = [
         path: 'products', component: Products
     },
     {
+        path: 'libros', component: Libros
+    },
+    {
         path: 'music', component: Music
     },
     {
-        path: 'Ofertas', component: Oferta
+        path: 'oferta', component: Oferta
+    },
+    {
+        path: 'galeria', component: Galeria
     }
 
 ];
 
-//{path: 'ofertas', component: Ofertas},
-// {path: 'ProductoSection2', component: Novedades },

@@ -1,34 +1,47 @@
+/* Container SIN display:flex */
 .container {
-    display: flex;
-    justify-content: center;
-    /*1rem = 16px*/
     padding: 1rem;
 }
 
+/* Título */
 h1 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding: 2rem;
     color: white;
 }
 
+/* Mantener calidad sin deformar */
 img {
-    height: 8rem;
-    /*Propiedad para ajustar tamaño al contenido manteniendo la calidad*/
     object-fit: cover;
+    width: 100%;
 }
 
-
-/*Pantalla de computadora*/
+/* Opcional: si querés manejar algo especial por pantalla */
 @media (min-width: 751px) {
     .card {
-        width: 16rem;
+        width: 100%; /* Siempre 100% en bootstrap */
     }
 }
 
-/*Pantalla de celular*/
 @media (max-width: 750px) {
     .card {
-        width: 9rem;
+        width: 100%; /* Igual acá */
     }
 }
+
+.card:hover {
+  /*cuando se pasa el mouse la card sube 4 píxeles, dando efecto de flotación.*/
+    transform: translateY(-4px);
+  /*Agrega una sombrita suave, que intensifica el efecto de que se “eleva”.*/
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-action {
+  background-color: black;
+  color: #ff0000;
+}
+
+.btn-action:hover {
+  color: white;
+}
+

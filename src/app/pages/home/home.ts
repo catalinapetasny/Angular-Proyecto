@@ -148,10 +148,10 @@ export class Home {
       },
       {
         id: 14,
-        img: "../../../assets/LinkinPark.jpeg",
-        alt: "Linkin Park",
-        nombre: "Linkin Park",
-        descripcion: "Banda de rock alternativo estadounidense"
+        img: "../../../assets/blackSabbath.jpeg",
+        alt: "Black Sabbath",
+        nombre: "Black Sabbath",
+        descripcion: "Banda de metal británica"
       },
       {
         id: 15,

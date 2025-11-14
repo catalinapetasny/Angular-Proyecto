@@ -1,0 +1,74 @@
+<h1 style=" margin: 1rem; color: white; font-weight: bold;" class="text-center text-white mb-4">
+    Galería
+</h1>
+
+<!-- Sección GALERÍA -->
+<div class="container">
+    <div class="row">
+
+        <!-- Recorre items de galería -->
+        <div *ngFor="let g of detalles" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+
+            <div class="card">
+                <div class="card gallery-card">
+
+                    <!-- Imagen del producto -->
+                    <img [src]="g.img" class="card-img-top" [alt]="g.alt">
+
+                    <div class="card-body">
+                        <h5 class="card-title">{{ g.titulo }}</h5>
+
+                        <p class="card-text">
+                            {{ g.descripcion }}
+                        </p>
+
+                        <!-- Botón que abre el modal -->
+                        <button type="button" class="btn btn-dark w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalGaleria" (click)="verDetalle(g)">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- MODAL (detalle del producto) -->
+<div class="modal fade" id="modalGaleria" tabindex="-1" aria-labelledby="galeriaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- HEADER DEL MODAL -->
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="galeriaLabel">
+                    {{ itemSeleccionado?.titulo }}
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- CUERPO DEL MODAL -->
+            <div class="modal-body">
+
+                <div class="modal-imagen text-center mb-3">
+                    <img [src]="itemSeleccionado?.img" [alt]="itemSeleccionado?.alt" class="img-fluid">
+                </div>
+
+                <p>
+                    {{ itemSeleccionado?.detalle }}
+                </p>
+
+            </div>
+
+            <!-- FOOTER DEL MODAL -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Cerrar
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
