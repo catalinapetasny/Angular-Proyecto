@@ -7,13 +7,6 @@
   color: white;
 }
 
-.contenedorTarjetas {
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-  height: 1rem;
-}
-
 /*Titulo llamado por ID*/
 #title {
   color: white;
@@ -41,7 +34,16 @@
   color: white;
 }
 
+/*Para que las imágenes se vean de igual tamaño*/
+.imagenTarjeta {
+  height: 20rem;
+  object-fit: cover;
+}
 
+.imagenTarjeta2 {
+  height: 30rem;
+  object-fit: cover;
+}
 
 .info-cards {
   display: flex;

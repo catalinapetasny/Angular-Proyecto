@@ -29,14 +29,14 @@ export class Music {
         img: "../../../assets/GreenDayFoto.png",
         alt: "Green Day",
         nombre: "Green Day",
-        descripcion: "Banda de punk rock estadounidense"
+        descripcion: "Banda de punk rock"
       },
       {
         id: 3,
-        img: "../../../assets/LinkinPark.jpeg",
-        alt: "Linkin Park",
-        nombre: "Linkin Park",
-        descripcion: "Banda de rock alternativo estadounidense"
+        img: "../../../assets/blackSabbath.jpeg",
+        alt: "Black Sabbath",
+        nombre: "Black Sabbath",
+        descripcion: "Banda de metal británica"
       },
       {
         id: 4,
@@ -154,7 +154,7 @@ export class Music {
       },
       {
         id: 19,
-         img: "../../../assets/Sabbath Bloody Sabbath.png",
+        img: "../../../assets/Sabbath Bloody Sabbath.png",
         alt: "Sabbath Bloody Sabbath - Black Sabbath (1973)",
         precio: 127000,
         tituloDisco: "Sabbath Bloody Sabbath",
@@ -202,11 +202,11 @@ export class Music {
       },
       {
         id: 25,
-        img: "../../../assets/Sehnsucht.png",
-        alt: "Sehnsucht - Rammstein",
+        img: "../../../assets/the police.jpeg",
+        alt: "Synchronicity - The Police",
         precio: 127000,
-        tituloDisco: "Sehnsucht",
-        artista: "Rammstein"
+        tituloDisco: "Synchronicity",
+        artista: "The Police"
       }
     ];
   }

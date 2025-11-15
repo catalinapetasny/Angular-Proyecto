@@ -99,7 +99,7 @@
 
 <!-- <div class="contenedorTarjetas row align-items-center card-top"> -->
 <div class="tituloh3">
-    <h3 style="color: black;">
+    <h3 style="color: black; text-align: center;">
         <b>
             Los más buscados en librería
         </b>
@@ -110,7 +110,7 @@
     <div class="row">
         <div *ngFor="let i of infoTarjeta2" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
             <div class="card">
-                <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
+                <img src="{{ i.img }}" class="card-img-top imagenTarjeta2" alt="{{ i.alt }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ i.tituloLibro }}</h5>
                     <p class="card-text">
@@ -206,7 +206,7 @@
 
 <!-- Encabezado 2 -->
 <div class="tituloh3">
-    <h3 style="color: black;">
+    <h3 style="color: black; text-align: center;">
         <b>
             ¡Artistas destacados!
         </b>
@@ -218,7 +218,7 @@
     <div class="row">
         <div *ngFor="let i of infoArtista" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
             <div class="card">
-                <img class="card-img-top" src="{{ i.img }}" alt="{{ i.alt }}">
+                <img class="card-img-top imagenTarjeta" src="{{ i.img }}" alt="{{ i.alt }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ i.nombre }}</h5>
                     <p class="card-text">{{ i.descripcion }}</p>
@@ -229,7 +229,7 @@
 </div>
 
 <div class="tituloh3">
-    <h3 style="color: black;">
+    <h3 style="color: black; text-align: center;">
         <b>
             Los más buscados en música
         </b>

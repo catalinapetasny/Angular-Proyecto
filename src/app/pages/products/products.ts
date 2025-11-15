@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Tarjeta } from '../../models/tarjeta';
 import { Destacados, Musica } from '../../models/destacados';
 
 @Component({
@@ -11,50 +10,45 @@ import { Destacados, Musica } from '../../models/destacados';
 })
 
 export class Products {
-  public infoTarjeta: Tarjeta[]; //Productos o tarjetas principales
   public infoTarjeta2: Destacados[];
   public infoMusica: Musica[];
 
   constructor() {
-    this.infoTarjeta = [
-      {
-        id: "1G",
-        img: "../../../assets/laLargaMarcha.jfif",
-        alt: "La Larga Marcha de Stephen King",
-        titulo: "La Larga Marcha",
-        descripcion: "Libro escrito por Stephen King",
-        anualPublicacion: 1979
-      },
-
-      {
-        id: "2E",
-        img: "../../../assets/elInstituto.jfif",
-        alt: "el instituto de Stephen King",
-        titulo: "El Instituto",
-        descripcion: "Libro escrito por Stephen King",
-        anualPublicacion: 2019
-      },
-
-      {
-        id: "3N",
-        img: "../../../assets/elVisitante.jfif",
-        alt: "el Visitante de Stephen King",
-        titulo: "El Visitante",
-        descripcion: "Libro escrito por Stephen King",
-        anualPublicacion: 2018
-      },
-
-      {
-        id: "3A",
-        img: "../../../assets/theStand.jfif",
-        alt: "The Stand de Stephen King",
-        titulo: "The Stand",
-        descripcion: "Libro escrito por Stephen King",
-        anualPublicacion: 1978
-      }
-    ]
 
     this.infoTarjeta2 = [
+      {
+        id: 0,
+        img: "../../../assets/laLargaMarcha.jfif",
+        alt: "La Larga Marcha de Stephen King",
+        precio: 35670,
+        tituloLibro: "La Larga Marcha",
+        autor: "Stephen King"
+      },
+      {
+        id: 1,
+        img: "../../../assets/elInstituto.jfif",
+        alt: "El Instituto de Stephen King",
+        precio: 35670,
+        tituloLibro: "El Instituto",
+        autor: "Stephen King"
+      },
+      {
+        id: 2,
+        img: "../../../assets/elVisitante.jfif",
+        alt: "el Visitante de Stephen King",
+        precio: 35670,
+        tituloLibro: "El Visitante",
+        autor: "Stephen King"
+      },
+
+      {
+        id: 3,
+        img: "../../../assets/theStand.jfif",
+        alt: "The Stand de Stephen King",
+        precio: 45890,
+        tituloLibro: "The Stand",
+        autor: "Stephen King"
+      },
       {
         id: 4,
         img: "../../../assets/it.jfif",
@@ -235,7 +229,7 @@ export class Products {
       },
       {
         id: 19,
-         img: "../../../assets/Sabbath Bloody Sabbath.png",
+        img: "../../../assets/Sabbath Bloody Sabbath.png",
         alt: "Sabbath Bloody Sabbath - Black Sabbath (1973)",
         precio: 127000,
         tituloDisco: "Sabbath Bloody Sabbath",
@@ -283,11 +277,11 @@ export class Products {
       },
       {
         id: 25,
-        img: "../../../assets/Sehnsucht.png",
-        alt: "Sehnsucht - Rammstein",
+        img: "../../../assets/the police.jpeg",
+        alt: "Synchronicity - The Police",
         precio: 127000,
-        tituloDisco: "Sehnsucht",
-        artista: "Rammstein"
+        tituloDisco: "Synchronicity",
+        artista: "The Police"
       }
     ];
   }

@@ -1,0 +1,42 @@
+
+/*Botones*/
+.btn-action {
+  background-color: black;
+  color: #ff0000;
+}
+
+.btn-action:hover {
+  color: white;
+}
+
+/*Titulo*/
+h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.banner {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  margin: 1rem;
+}
+
+/*Para que las imágenes se vean de igual tamaño*/
+/* .imagenTarjeta {
+  height: 20rem;
+  object-fit: cover;
+} */
+
+.imagenTarjeta2 {
+  height: 30rem;
+  object-fit: cover;
+}

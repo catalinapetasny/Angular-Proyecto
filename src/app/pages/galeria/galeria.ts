@@ -15,10 +15,10 @@ export class Galeria {
     this.detalles = [
       {
         id: 1,
-        img: "../../../assets/bornAgain.png",
-        titulo: "Born Again - Black Sabbath",
-        descripcion: "Born Again, aĺbum musical hecho por Black Sabbath",
-        detalle: "Un disco polémico, oscuro y único dentro de la discografía"
+        img: "../../../assets/Linkin Park - Living Things.jpeg",
+        titulo: "Linkin Park - Living Things",
+        descripcion: "Living Things, aĺbum musical hecho por Linkin Park",
+        detalle: "..."
       },
       {
         id: 2,

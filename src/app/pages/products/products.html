@@ -2,6 +2,19 @@
     ¡Nuestros Productos!
 </h1>
 
+       <!--*ngFor - Es una directiva que permite iterar colecciones/arreglos.
+        funcionalidad similar al "for", "forEach"
+        -->
+
+        <!--
+        let i -> definición de la variable que representa 1 elemento 
+        de la colección "InfoTarjeta" (permite iterar)
+        -->
+
+                            <!--
+                    Interpolación -> Permite acceder a una propiedad 
+                    especifica del modelo
+                    -->
 <!--
     lg (larger): Tamaño de pantalla más grande -> PC
 
@@ -11,25 +24,14 @@
 -->
 
 <!-- Tarjetas de los primeros 4 productos -->
-<div class="container">
+<!-- <div class="container">
     <div class="row">
-        <!--*ngFor - Es una directiva que permite iterar colecciones/arreglos.
-        funcionalidad similar al "for", "forEach"
-        -->
-
-        <!--
-        let i -> definición de la variable que representa 1 elemento 
-        de la colección "InfoTarjeta" (permite iterar)
-        -->
-        <div *ngFor="let i of infoTarjeta" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
+        <div *ngFor="let i of infoTarjeta2" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
             <div class="card">
                 <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
                 <div class="card-body">
-                    <!--
-                    Interpolación -> Permite acceder a una propiedad 
-                    especifica del modelo
-                    -->
-                    <h5 class="card-title">{{ i.titulo }}</h5>
+
+                    <h5 class="card-title">{{ i.tituloLibro }}</h5>
 
                     <p class="card-text">{{ i.descripcion }} - {{ i.anualPublicacion }}</p>
 
@@ -43,7 +45,6 @@
     </div>
 </div>
 
-<!-- Modal -->
 <div class="modal fade" id="verMasInfo" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -66,7 +67,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- Tarjetas de los productos destacados en el home -->
 
@@ -127,7 +128,7 @@
     <div class="row">
         <div *ngFor="let i of infoMusica" class="col-lg-3 col-md-6 col-sm-12 col-xs-12 mb-4">
             <div class="card">
-                <img src="{{ i.img }}" class="card-img-top" alt="{{ i.alt }}">
+                <img src="{{ i.img }}" class="card-img-top imagenTarjeta" alt="{{ i.alt }}">
                 <div class="card-body">
                     <h5 class="card-title">{{ i.tituloDisco }}</h5>
                     <p class="card-text">

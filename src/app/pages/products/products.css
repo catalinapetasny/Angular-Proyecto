@@ -1,37 +1,40 @@
 /* Container SIN display:flex */
 .container {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 /* Título */
 h1 {
-    text-align: center;
-    padding: 2rem;
-    color: white;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  font-weight: bold;
 }
 
 /* Mantener calidad sin deformar */
 img {
-    object-fit: cover;
-    width: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* Opcional: si querés manejar algo especial por pantalla */
 @media (min-width: 751px) {
-    .card {
-        width: 100%; /* Siempre 100% en bootstrap */
-    }
+  .card {
+    width: 100%;
+    /* Siempre 100% en bootstrap */
+  }
 }
 
 @media (max-width: 750px) {
-    .card {
-        width: 100%; /* Igual acá */
-    }
+  .card {
+    width: 100%;
+    /* Igual acá */
+  }
 }
 
 .card:hover {
   /*cuando se pasa el mouse la card sube 4 píxeles, dando efecto de flotación.*/
-    transform: translateY(-4px);
+  transform: translateY(-4px);
   /*Agrega una sombrita suave, que intensifica el efecto de que se “eleva”.*/
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -45,3 +48,13 @@ img {
   color: white;
 }
 
+/*Para que las imágenes se vean de igual tamaño*/
+.imagenTarjeta {
+  height: 20rem;
+  object-fit: cover;
+}
+
+.imagenTarjeta2 {
+  height: 30rem;
+  object-fit: cover;
+}
