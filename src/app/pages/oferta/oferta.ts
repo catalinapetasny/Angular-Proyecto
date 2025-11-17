@@ -23,7 +23,7 @@ export class Oferta {
       },
       {
         id: 2,
-        img: "../../../assets/elGatoNegro.jpeg",
+        img: "../../../assets/elGatoNegro.png",
         titulo: "El Gato Negro - Edgar Allan Poe",
         precioOriginal: 24000,
         precioOferta: 13990,
@@ -31,7 +31,7 @@ export class Oferta {
       },
       {
         id: 3,
-        img: "../../../assets/elColeccionista.jpeg",
+        img: "../../../assets/elColeccionista.png",
         titulo: "El Coleccionista - John Fowles",
         precioOriginal: 35000,
         precioOferta: 19990,
@@ -65,7 +65,7 @@ export class Oferta {
 
       {
         id: 7,
-        img: "../../../assets/mascaraMuerteRoja.jpg",
+        img: "../../../assets/mascaraMuerteRoja.png",
         titulo: "La Máscara de la Muerte Roja - Edgar Allan Poe",
         precioOriginal: 30000,
         precioOferta: 17990,
@@ -73,7 +73,7 @@ export class Oferta {
       },
       {
         id: 8,
-        img: "../../../assets/cujo.jpeg",
+        img: "../../../assets/cujo.png",
         titulo: "Cujo - Stephen King",
         precioOriginal: 42000,
         precioOferta: 24999,
@@ -115,7 +115,7 @@ export class Oferta {
 
       {
         id: 13,
-        img: "../../../assets/holly.jpg",
+        img: "../../../assets/holly.png",
         titulo: "Holly - Stephen King",
         precioOriginal: 50000,
         precioOferta: 28990,
@@ -123,7 +123,7 @@ export class Oferta {
       },
       {
         id: 14,
-        img: "../../../assets/laLoteria.jpeg",
+        img: "../../../assets/laLoteria.png",
         titulo: "La Lotería - Shirley Jackson",
         precioOriginal: 28000,
         precioOferta: 16990,
@@ -131,7 +131,7 @@ export class Oferta {
       },
       {
         id: 15,
-        img: "../../../assets/maldicion.jpg",
+        img: "../../../assets/maldicion.png",
         titulo: "La Maldición de Hill House - Shirley Jackson",
         precioOriginal: 31000,
         precioOferta: 17990,
@@ -163,5 +163,11 @@ export class Oferta {
         categoria: "album"
       }
     ];
+  }
+
+  seleccionarTarjeta: any = null;
+
+  verMasInfo(tarjeta: any){
+    this.seleccionarTarjeta = tarjeta
   }
 }

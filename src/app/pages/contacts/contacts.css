@@ -1,12 +1,11 @@
-.btn-rock {
-  background-color: #000;
-  color: #fff;
-  border: 2px solid #8b0000;
+.nuevoMensaje {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
   font-weight: bold;
-  transition: all 0.3s ease;
 }
 
-.btn-rock:hover {
-  background-color: #8b0000;
-  border-color: #000;
+.btn-light {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }

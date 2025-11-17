@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { Destacados } from '../../models/destacados'
+import { Mensaje } from '../../models/mensaje';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { NewProducts } from '../../new-products/new-products';
 
 
 @Component({
@@ -16,7 +15,7 @@ export class Contacts {
   private contadorId = 1;
 
   // Coleccion de productos tipo PRODUCTO 
-  coleccionProductos: Destacados[] = [];
+  coleccionProductos: Mensaje[] = [];
 
   // Instancia que se vincula con el formulario desde el HTML
 
@@ -24,39 +23,38 @@ export class Contacts {
     string -> '' - number -> null
     Validators.required -> validado como valor requerido estrictamente
   */
-  nuevoProducto = new FormGroup({
-    nombre: new FormControl('', Validators.required),
-    descripcion: new FormControl('', Validators.required),
-    precio: new FormControl(null, Validators.required),
-    img: new FormControl(''),
-    alt: new FormControl('')
+
+  nuevoMensaje = new FormGroup({
+    mensaje: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.required), 
+    nombre: new FormControl('')
   });
 
   /**
   * @description Método de descripción de productos
   */
 
-  crearProducto(): void {
-    if (this.nuevoProducto.valid) {
-      const nuevoProducto: Destacados = {
+  enviarMensaje(): void {
+    if (this.nuevoMensaje.valid) {
+      const nuevoMensaje: Mensaje = {
         id: this.contadorId++,
         /*
         resto de propiedades, asignamos desde el formulario el valor que se recibio
         desde su casilla o formControlName
         */
-        precio: this.nuevoProducto.value.precio!,
-        tituloLibro: this.nuevoProducto.value.nombre!,
-        // autor: this.nuevoProducto.value.autor!,
+        mensaje: this.nuevoMensaje.value.mensaje!,
+        email: this.nuevoMensaje.value.email!,
+        nombre: this.nuevoMensaje.value.nombre!
       }
 
       //Agregamos un nuevo producto a colección productos
-      this.coleccionProductos.push(nuevoProducto);
+      this.coleccionProductos.push(nuevoMensaje);
 
-      console.log(`Producto agregado: ${nuevoProducto}`);
-      console.log(`Coleccion actual de productos: ${this.coleccionProductos}`);
+      alert("Se ha enviado el mensaje correctamente")
+      console.log(`Mensaje enviado: ${nuevoMensaje}`);
 
       //Reseteamos el formulario
-      this.nuevoProducto.reset();
+      this.nuevoMensaje.reset();
     }
   }
 

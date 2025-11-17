@@ -3,8 +3,39 @@ h1 {
     justify-content: center;
     margin: 1rem;
 }
-
+/* 
 .imagenTarjeta2 {
     height: 30rem;
     object-fit: cover;
+} */
+
+.carousel-img {
+  width: 100%;
+  max-width: 70%;
+  /* se ve grande pero no exagerado en PC */
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .carousel-img {
+    max-width: 500px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .carousel-img {
+    max-width: 100%;
+    /* ocupa casi toda la pantalla */
+  }
+}
+
+.carousel {
+  background-color: #111;  /* Cambia el color de fondo del carrusel */
+  padding: 20px 0; /* Agrega espacio arriba y abajo dentro del carrusel */
+  border-radius: 10px;  /* Redondea las esquinas del carrusel */
 }
