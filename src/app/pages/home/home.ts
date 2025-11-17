@@ -163,7 +163,6 @@ export class Home {
     ]
 
 
-
     /* Info tarjetas (albumes) destacados */
 
     this.infoMusica = [

@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 export class Galeria {
   public detalles: GaleriaItem[];
 
-  constructor () {
+  constructor() {
     this.detalles = [
       {
         id: 1,
@@ -42,11 +42,11 @@ export class Galeria {
         detalle: "Un disco polémico, oscuro y único dentro de la discografía"
       },
       {
-      id: 5,
-      img: "../../../assets/strangerThingsBook.jpeg",
-      titulo: "Stranger Things - World Turns Upside Down",
-      descripcion: "Libro oficial de Stranger Things",
-      detalle: "Explora el pasado del laboratorio Hawkins y sus secretos."
+        id: 5,
+        img: "../../../assets/strangerThingsBook.jpeg",
+        titulo: "Stranger Things - World Turns Upside Down",
+        descripcion: "Libro oficial de Stranger Things",
+        detalle: "Explora el pasado del laboratorio Hawkins y sus secretos."
       },
       {
         id: 6,
@@ -74,28 +74,28 @@ export class Galeria {
         img: "../../../assets/theClash.jpeg",
         titulo: "Combat Rock",
         descripcion: "Combat Rock, un álbum musical hecho por The Clash",
-        detalle: "Un disco polémico, oscuro y único dentro de la discografía" 
+        detalle: "Un disco polémico, oscuro y único dentro de la discografía"
       },
       {
         id: 10,
         img: "../../../assets/kiss.jpeg",
         titulo: "Dynasty",
         descripcion: "Dynasty, un álbum musical hecho por Kiss",
-        detalle: "Un disco polémico, oscuro y único dentro de la discografía"  
+        detalle: "Un disco polémico, oscuro y único dentro de la discografía"
       },
       {
         id: 11,
         img: "../../../assets/master of puppets.jpeg",
         titulo: "Master Of Puppets",
         descripcion: "Master Of Puppets, un álbum musical hecho por Metallica",
-        detalle: "Un disco polémico, oscuro y único dentro de la discografía" 
+        detalle: "Un disco polémico, oscuro y único dentro de la discografía"
       },
       {
         id: 12,
         img: "../../../assets/Plastic Beach.jpeg",
         titulo: "Plastic Beach",
         descripcion: "Plastic Beach, un álbum musical hecho por Gorillaz",
-        detalle: "Un disco polémico, oscuro y único dentro de la discografía" 
+        detalle: "Un disco polémico, oscuro y único dentro de la discografía"
       }
     ]
   }

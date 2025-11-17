@@ -1,0 +1,10 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.imagenTarjeta2 {
+    height: 30rem;
+    object-fit: cover;
+}

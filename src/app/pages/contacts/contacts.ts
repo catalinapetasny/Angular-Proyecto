@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Destacados } from '../../models/destacados'
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { NewProducts } from '../../new-products/new-products';
+
 
 @Component({
   selector: 'app-contacts',

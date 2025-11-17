@@ -31,10 +31,10 @@ h1 {
 }
 
 /*Para que las imágenes se vean de igual tamaño*/
-/* .imagenTarjeta {
-  height: 20rem;
+  /* .imagenTarjeta {
+  height: 30rem;
   object-fit: cover;
-} */
+}   */
 
 .imagenTarjeta2 {
   height: 30rem;
