@@ -40,7 +40,7 @@ export class Oferta {
 
       {
         id: 4,
-        img: "../../../assets/letThereBeRock.jpeg",
+        img: "../../../assets/letThereBeRock.png",
         titulo: "Let There Be Rock - AC/DC",
         precioOriginal: 60000,
         precioOferta: 37999,
@@ -48,7 +48,7 @@ export class Oferta {
       },
       {
         id: 5,
-        img: "../../../assets/londonCalling.jpeg",
+        img: "../../../assets/londonCalling.png",
         titulo: "London Calling - The Clash",
         precioOriginal: 65000,
         precioOferta: 38999,
@@ -56,7 +56,7 @@ export class Oferta {
       },
       {
         id: 6,
-        img: "../../../assets/zenyatta.jpeg",
+        img: "../../../assets/zenyatta.png",
         titulo: "Zenyatta Mondatta - The Police",
         precioOriginal: 55000,
         precioOferta: 33990,
@@ -90,7 +90,7 @@ export class Oferta {
 
       {
         id: 10,
-        img: "../../../assets/andJusticeForAll.jpeg",
+        img: "../../../assets/andJusticeForAll.png",
         titulo: "…And Justice for All - Metallica",
         precioOriginal: 70000,
         precioOferta: 42990,
@@ -98,7 +98,7 @@ export class Oferta {
       },
       {
         id: 11,
-        img: "../../../assets/loveGun.jpeg",
+        img: "../../../assets/loveGun.png",
         titulo: "Love Gun - KISS",
         precioOriginal: 62000,
         precioOferta: 38990,
@@ -140,7 +140,7 @@ export class Oferta {
 
       {
         id: 16,
-        img: "../../../assets/gorillazAlbum.jpeg",
+        img: "../../../assets/gorillazAlbum.png",
         titulo: "Gorillaz - Gorillaz",
         precioOriginal: 64000,
         precioOferta: 37999,
@@ -148,7 +148,7 @@ export class Oferta {
       },
       {
         id: 17,
-        img: "../../../assets/meteora.jpeg",
+        img: "../../../assets/meteora.png",
         titulo: "Meteora - Linkin Park",
         precioOriginal: 6000,
         precioOferta: 40999,
@@ -156,7 +156,7 @@ export class Oferta {
       },
       {
         id: 18,
-        img: "../../../assets/useYourIllusion2.jpeg",
+        img: "../../../assets/useYourIllusion2.png",
         titulo: "Use Your Illusion II - Guns N' Roses",
         precioOriginal: 72000,
         precioOferta: 41999,

@@ -16,7 +16,7 @@ export class Galeria {
       {
         id: 1,
         img: "../../../assets/Linkin Park - Living Things.jpeg",
-        titulo: "Linkin Park - Living Things",
+        titulo: "Living Things - Linkin Park",
         descripcion: "Living Things, aĺbum musical hecho por Linkin Park",
         detalle: "..."
       },

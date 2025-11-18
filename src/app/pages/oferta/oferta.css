@@ -39,3 +39,12 @@ h1 {
   padding: 20px 0; /* Agrega espacio arriba y abajo dentro del carrusel */
   border-radius: 10px;  /* Redondea las esquinas del carrusel */
 }
+
+.btn-action {
+  background-color: black;
+  color: #ff0000;
+}
+
+.btn-action:hover {
+  color: white;
+}

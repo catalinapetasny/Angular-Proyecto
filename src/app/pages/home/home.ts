@@ -38,10 +38,10 @@ export class Home {
 
       {
         id: 3,
-        img: "../../../assets/dante.png",
+        img: "../../../assets/stoker.png",
         alt: "Autor",
-        nombre: "Dante Alighieri",
-        libros: "Infierno, Purgatorio, Divina Comedia, entre otras."
+        nombre: "Bram Stoker",
+        libros: "Drácula, El Huesped de Drácula, entre otras."
       },
 
       {
