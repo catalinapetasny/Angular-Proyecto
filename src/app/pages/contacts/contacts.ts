@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Mensaje } from '../../models/mensaje';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
-
 @Component({
   selector: 'app-contacts',
   imports: [ReactiveFormsModule],

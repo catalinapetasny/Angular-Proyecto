@@ -41,8 +41,7 @@ export class Home {
         img: "../../../assets/stoker.png",
         alt: "Autor",
         nombre: "Bram Stoker",
-        libros: "Drácula, El Huesped de Drácula, entre otras."
-      },
+        libros: "Drácula, El Huesped de Drácula, entre otras."},
 
       {
         id: 4,
